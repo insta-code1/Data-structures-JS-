@@ -1,3 +1,36 @@
+/* ============================================================== 
+     
+                          Linked List
+
+     Linked List have a constant runtime known as
+
+     Constant Time - O (1):
+      -Adding/removing head
+      -Adding/removing tail
+
+      This is because we are using the head and tail pointers to 
+      keep track of our head and tail nodes. There for we next has to 
+      iterate through the list to find the head or tail nodes.
+
+      We can find it and preform an operation on it in constant time
+      because we always know where they are because we have our pointers.
+      Adding and removing the head or tail nodes is a very performant operation.
+
+      Searching though Linked List:
+       - Linear time complexity
+       - O (n)
+
+       worst case we have to search to the end of the list to find that value.
+       So as the list grows in size the time that it takes to run our search
+       function will grow proportionally to the size of the Linked List.
+
+       - O (n) is still acceptable and efficient time complexity.
+
+       Linked Lists are rather performant in nature and are a commonly used data 
+       structure.
+ 
+ ============================================================== */
+
 function LinkedList() {
   this.head = null;
   this.tail = null;
@@ -41,10 +74,10 @@ LinkedList.prototype.removeTail = function() {
   return val;
 }
 
-LinkedList.prototype.search = function(serchValue) {
+LinkedList.prototype.search = function(searchValue) {
   var currentNode = this.head;
   while (currentNode) {
-    if(currentNode.value === serchValue) return currentNode.value;
+    if(currentNode.value === searchValue) return currentNode.value;
     currentNode = currentNode.next;
   }
   return null;
