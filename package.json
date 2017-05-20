@@ -1,0 +1,19 @@
+{
+  "name": "data_structures",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked_list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/insta-code1/Data-structures-JS-.git"
+  },
+  "author": "insta_code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insta-code1/Data-structures-JS-/issues"
+  },
+  "homepage": "https://github.com/insta-code1/Data-structures-JS-#readme"
+}
